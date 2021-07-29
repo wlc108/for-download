@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/notepad.css" />
+  <title>Testing</title>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+
+  <div class="container">
+    <div class="d-flex flex-row flex-wrap-reverse text-center justify-content-around">
+
+      <div class="bg-secondary mr-2">
+        <div id="menu" class="bg-primary text-center">
+          <div id="menu-start">
+            <p>Welcome to our online Deli Ordering System (DOS).</p>
+            <p>You can place an order online for pickup
+              and we'll have it ready for you when you arrive. We do not currently support deliveries, but we hope to
+              offer drone delivery in the near future.</p>
+          </div>
+          <div id="select-bread" class="bg-info pb-1 d-none">
+            <p class="text-center">Please select your bread.</p>
+            <div class="row justify-content-center">
+              <div class="text-left">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="breadType">White
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="breadType">Wheat
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="breadType">Sourdough
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="breadType">Rye
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="select-meat" class="bg-secondary pb-1 d-none">
+            <p class="text-center mb-0">Please select your meat.</p>
+            <i class="text-center">One is included in the price. Additional are $1.00 each.</i>
+            <div class="row justify-content-center">
+              <div class="text-left">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Roasted Turkey" id="meat-turkey">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Roasted Turkey
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Chicken" id="meat-chicken">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Chicken
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Ham" id="meat-ham">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Ham
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Roast Beef" id="meat-roastbeef">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Roast Beef
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="select-cheese" class="bg-secondary pb-1 d-none">
+            <p class="text-center mb-0">Please select your cheese.</p>
+            <i class="text-center">One is included in the price. Additional are $0.50 each.</i>
+            <div class="row justify-content-center">
+              <div class="text-left">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Cheddar" id="chz-cheddar">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Cheddar
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Provolone" id="chz-provolone">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Provolone
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mozzarella" id="chz-mozzarella">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Mozzarella
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Gouda" id="chz-gouda">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Gouda
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="select-veggie" class="bg-primary pb-1 d-none">
+            <p class="text-center mb-0">Please select your veggies.</p>
+            <i class="text-center">Up to two are included in the price. Additional are $0.35 each.</i>
+            <div class="row justify-content-center">
+              <div class="text-left">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Lettuce" id="veg-lettuce">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Lettuce
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Sliced Tomato" id="veg-tomato">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Sliced Tomato
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Spinach" id="veg-spinach">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Spinach
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="select-condiment" class="bg-info pb-1 d-none">
+            <p class="text-center mb-0">Please select your condiments.</p>
+            <div class="row justify-content-center">
+              <div class="text-left">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mayo" id="cnd-mayo">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Mayo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Mustard" id="cnd-mustard">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Mustard
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Oil" id="cnd-oil">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Oil
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="confirm-order" class="bg-info pb-1 d-none">
+            <p class="text-center mb-0">Is your order correct?</p>
+          </div>
+          <div id="completed-order" class="bg-info pb-1 d-none">
+            <p class="text-center mb-0">Your order is now complete.</p>
+          </div>
+          <button id="menu-btn-next">Begin</button>
+        </div>
+
+
+      </div>
+
+
+      <div id="notepad" class="">
+        <div class="header">Sandwich Order</div>
+        <ul>
+          <li id="bread" class="d-none">-</li>
+          <li id="meat" class="d-none">-</li>
+          <li id="cheese" class="d-none">-</li>
+          <li id="veggie" class="d-none">-</li>
+          <li id="condiment" class="d-none">-</li>
+          <!-- <li id="bread">- Whole Wheat Bread</li>
+          <li id="meat">- Ham, Turkey, Bacon</li>
+          <li id="cheese">- Swiss</li>
+          <li id="veggie">- Lettuce, Tomato, Onion, Other, Other, Other</li>
+          <li id="condiment">- Mustard, Mayo (light), Oil</li> -->
+        </ul>
+        <div id="price-section" class="price text-right mr-4 d-none">
+          Total Price: <span id="sandwich-price">$25.99</span>
+        </div>
+        <div id="finalized" class="d-none">
+          <img id="stamped" src="images/stamp.png">
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="scripts/deli.js"></script>
+</body>
+
+</html>

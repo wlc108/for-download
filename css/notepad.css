@@ -1,0 +1,52 @@
+body {
+    background-color: slategray;
+}
+
+#notepad {
+    /* height: 1034px;
+    width: 868px;     */
+    min-height: 517px;
+    min-width: 434px;
+    /* max-height: 517px;
+    max-width: 434px;     */
+    /* min-width: 434px;
+    min-height: 517px; */
+    background-color: red;
+    background-image:url('/images/blank-notepad-smaller.jpg');    
+    background-repeat: no-repeat;    
+    /* background-size: contain; */
+    background-size: contain;    
+    padding-top: 50px;                
+} 
+
+#notepad .header {
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+#notepad ul, #notepad .price {    
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em;
+    list-style-type: none;
+    text-align: left;
+}
+
+#notepad #sandwich-price {
+    color: red;    
+}
+
+#stamped {
+    height: 100px;        
+}
+
+
+#menu {    
+    height: 517px;
+    
+    min-width: 434px;
+    max-width: 434px;
+    background: purple !important;
+}
+ 
